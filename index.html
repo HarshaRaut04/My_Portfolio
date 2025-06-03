@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harsha Raut - Middleware Administrator</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #f8f1e9; /* Soft off-white background */
+      background-color: #f4f6f9;
       color: #1a3c34;
     }
     header, footer {
@@ -19,13 +19,22 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     header h1 {
-      margin: 0;
+      margin: 10px 0 5px;
       font-size: 2.5em;
     }
     header p {
-      margin-top: 10px;
+      margin: 0;
       font-size: 1.2em;
       opacity: 0.9;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-top: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
     section {
       padding: 40px 20px;
@@ -44,11 +53,12 @@
       gap: 20px;
     }
     .skills div, .projects div, .certifications div {
-      background-color: #fef3e2;
+      background-color: #fffaf2;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
       transition: transform 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     .skills div:hover, .projects div:hover, .certifications div:hover {
       transform: translateY(-5px);
@@ -56,8 +66,9 @@
     .experience div {
       margin-bottom: 30px;
       padding: 15px;
-      background-color: #fef3e2;
+      background-color: #fffaf2;
       border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     .experience h3 {
       margin-bottom: 5px;
@@ -98,6 +109,7 @@
 <body>
 
   <header>
+    <img src="your-image.jpg" alt="Harsha Raut" class="profile-img" />
     <h1>Harsha Raut</h1>
     <p>Middleware Administrator | DevOps Enthusiast | Automation Expert</p>
   </header>
@@ -124,50 +136,42 @@
   <section class="experience">
     <h2>Experience</h2>
     <div>
-      <h3>Manager - Reliance Jio Infocomm Ltd.</h3>
-      <p>Sep 2022 - Present</p>
+      <h3>Manager - Middleware Administrator</h3>
+      <p>Reliance Jio Infocomm Ltd | Pune | Aug 2018 – Present</p>
       <ul>
-        <li>Lead middleware operations and infrastructure management for Oracle WebLogic environments supporting critical telecom applications.</li>
-        <li>Implemented performance tuning and proactive monitoring to maintain 99.99% uptime.</li>
-        <li>Developed automation scripts using Bash to reduce manual interventions by 40%, enhancing deployment speed and accuracy.</li>
-        <li>Conducted root cause analysis and resolved complex middleware and server issues ensuring minimal business impact.</li>
-        <li>Managed SSL certificate lifecycle, including renewals and troubleshooting for secure communications.</li>
-        <li>Collaborated with DevOps and security teams to integrate monitoring tools like AppDynamics and Plunk for real-time observability.</li>
-        <li>Guided and mentored junior team members and cross-functional teams to enhance operational efficiency.</li>
-        <li>Supported RPA project testing by providing middleware environment stability and automation assistance.</li>
+        <li>Oversee installation, configuration, and maintenance of middleware components to ensure high availability and performance.</li>
+        <li>Optimize middleware performance through regular monitoring, tuning, and capacity planning.</li>
+        <li>Provide expert troubleshooting and root cause analysis for L3-level issues.</li>
+        <li>Manage SSL tasks including certificate generation, installation, and renewal.</li>
+        <li>Support observability tools such as Splunk and AppDynamics for improved monitoring and alerting.</li>
+        <li>Document and report middleware-related incidents, changes, and processes.</li>
       </ul>
     </div>
     <div>
-      <h3>Senior Specialist - HCL Technologies</h3>
-      <p>Apr 2022 - Sep 2022</p>
+      <h3>Middleware Administrator</h3>
+      <p>Vodafone Shared Services | Pune | Feb 2015 – Jul 2018</p>
       <ul>
-        <li>Provided expert support on Oracle WebLogic middleware infrastructure for multiple clients.</li>
-        <li>Developed and maintained automation scripts to streamline deployments, patching, and configuration management.</li>
-        <li>Integrated monitoring solutions to accelerate issue detection and resolution.</li>
-        <li>Collaborated with DevOps teams to improve CI/CD pipelines and automation frameworks.</li>
-        <li>Handled middleware troubleshooting, including thread dumps, heap analysis, and JVM tuning.</li>
-        <li>Participated in planning and executing migration and upgrade projects ensuring minimal downtime.</li>
+        <li>Managed Oracle WebLogic Server environments across production and non-production stages.</li>
+        <li>Performed performance tuning and health checks to maintain optimal server performance.</li>
+        <li>Worked closely with application and database teams to coordinate deployments and resolve issues.</li>
+        <li>Automated routine tasks using shell scripting to increase operational efficiency.</li>
       </ul>
     </div>
     <div>
-      <h3>Assistant Manager - Vodafone Intelligent Solutions</h3>
-      <p>Dec 2018 - Apr 2022</p>
+      <h3>System Engineer</h3>
+      <p>Cognizant Technology Solutions | Pune | Nov 2012 – Jan 2015</p>
       <ul>
-        <li>Managed middleware deployment and configuration for Oracle WebLogic and Apache servers.</li>
-        <li>Implemented performance tuning and log analysis to optimize server performance.</li>
-        <li>Automated routine operational tasks with scripting to improve reliability.</li>
-        <li>Supported production incidents, performing root cause analysis and coordinating fixes.</li>
-        <li>Ensured security compliance through patch management and configuration audits.</li>
+        <li>Supported WebLogic server configuration, deployment, and monitoring.</li>
+        <li>Assisted in migration projects and server upgrades, ensuring minimal downtime.</li>
+        <li>Monitored logs, analyzed issues, and applied patches and updates in coordination with senior engineers.</li>
       </ul>
     </div>
     <div>
-      <h3>Senior System Engineer - Cognizant Technology Solutions</h3>
-      <p>May 2015 - Dec 2018</p>
+      <h3>Linux Administrator</h3>
+      <p>HCL Technologies | Noida | Jun 2010 – Oct 2012</p>
       <ul>
-        <li>Installed, configured, and maintained WebLogic middleware environments for large-scale enterprise applications.</li>
-        <li>Worked closely with developers and QA teams to support middleware needs for testing and production environments.</li>
-        <li>Monitored server health, managed SSL certificates, and maintained disaster recovery plans.</li>
-        <li>Participated in automation efforts using Shell scripting and configuration management tools.</li>
+        <li>Maintained Linux server environments and managed Apache, Nginx, and shell scripts.</li>
+        <li>Provided support for middleware components and participated in deployments and troubleshooting tasks.</li>
       </ul>
     </div>
   </section>
